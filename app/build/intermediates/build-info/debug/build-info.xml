@@ -5,32 +5,32 @@
     build-mode="COLD"
     density="xhdpi"
     format="10"
-    ir-eligibility="COMPATIBLE"
+    ir-eligibility="METHOD_DELETED"
     plugin-version="3.2.1"
-    timestamp="1560871902170"
+    timestamp="1560908387853"
     token="5514832535022936117"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="511" />
+        duration="665" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="61" />
+        duration="77" />
     <task
         name="verifier"
-        duration="13" />
+        duration="41" />
 
     <artifact
-        location="C:\Users\USER\Desktop\UnitedRemote\GitHubRepos\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+        location="C:\Users\USER\Desktop\UnitedRemote\GitHubRepos\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
         type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1560871124795"
+        timestamp="1560901750791"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\USER\Desktop\UnitedRemote\GitHubRepos\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
@@ -45,51 +45,18 @@
             location="C:\Users\USER\Desktop\UnitedRemote\GitHubRepos\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\USER\Desktop\UnitedRemote\GitHubRepos\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
-            type="SPLIT" />
-        <artifact
             location="C:\Users\USER\Desktop\UnitedRemote\GitHubRepos\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\USER\Desktop\UnitedRemote\GitHubRepos\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            location="C:\Users\USER\Desktop\UnitedRemote\GitHubRepos\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\USER\Desktop\UnitedRemote\GitHubRepos\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            location="C:\Users\USER\Desktop\UnitedRemote\GitHubRepos\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\USER\Desktop\UnitedRemote\GitHubRepos\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\USER\Desktop\UnitedRemote\GitHubRepos\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\USER\Desktop\UnitedRemote\GitHubRepos\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\USER\Desktop\UnitedRemote\GitHubRepos\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        ir-eligibility="R_CLASS_CHANGE"
-        timestamp="1560871803900"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="C:\Users\USER\Desktop\UnitedRemote\GitHubRepos\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\USER\Desktop\UnitedRemote\GitHubRepos\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\USER\Desktop\UnitedRemote\GitHubRepos\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\USER\Desktop\UnitedRemote\GitHubRepos\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\USER\Desktop\UnitedRemote\GitHubRepos\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
-            type="SPLIT" />
-        <artifact
             location="C:\Users\USER\Desktop\UnitedRemote\GitHubRepos\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
         <artifact
@@ -104,11 +71,29 @@
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="COMPATIBLE"
-        timestamp="1560871902170"
+        ir-eligibility="FIELD_TYPE_CHANGE"
+        timestamp="1560903279441"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="C:\Users\USER\Desktop\UnitedRemote\GitHubRepos\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            location="C:\Users\USER\Desktop\UnitedRemote\GitHubRepos\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="CLASS_ADDED"
+        timestamp="1560908151165"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\USER\Desktop\UnitedRemote\GitHubRepos\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="METHOD_DELETED"
+        timestamp="1560908387853"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\USER\Desktop\UnitedRemote\GitHubRepos\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
     </build>
 

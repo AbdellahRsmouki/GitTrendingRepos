@@ -10,7 +10,7 @@
         android:id="@+id/gitHub_image"
         android:layout_width="50dip"
         android:layout_height="50dip"
-        app:srcCompat="@drawable/GitHubLogo"
+        app:srcCompat="@drawable/github_logo"
         />
     <TextView
         android:id="@+id/repo_owner_name"
