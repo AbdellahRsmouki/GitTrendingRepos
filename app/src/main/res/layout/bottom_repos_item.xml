@@ -1,45 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="horizontal">
-    <ImageView
-        android:scaleType="centerInside"
-        android:id="@+id/gitHub_image"
-        android:layout_width="50dip"
-        android:layout_height="50dip"
-        app:srcCompat="@drawable/github_logo"
-        />
-    <TextView
-        android:id="@+id/repo_owner_name"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:paddingTop="15dp"
-        android:paddingLeft="1dp"
-        android:text="10sp"
-        android:textAppearance="?android:attr/textAppearanceListItemSmall"
-        tools:text="OWNER NAME"
-        />
-    <ImageView
-        android:scaleType="centerInside"
-        android:id="@+id/star"
-        android:layout_width="50dip"
-        android:layout_height="50dip"
-        android:layout_alignParentRight="true"
-        app:srcCompat="@drawable/star"
-        />
-    <TextView
-        android:id="@+id/number_of_stars"
-        android:layout_width="match_parent"
+        android:orientation="horizontal">
+        <ImageView
+            android:scaleType="centerInside"
+            android:id="@+id/gitHub_image"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            app:srcCompat="@drawable/github_logo"
+            />
+        <TextView
+            android:id="@+id/repo_owner_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="15dp"
+            android:paddingLeft="1dp"
+            android:text="10sp"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+            tools:text="OWNER NAME"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:paddingTop="15dp"
-        android:paddingLeft="1dp"
-        android:text="10sp"
-        android:textAppearance="?android:attr/textAppearanceListItemSmall"
-        tools:text="NEMBER OF STARS"
-        />
-</LinearLayout>
+        android:layout_alignParentRight="true">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:scaleType="centerInside"
+                android:id="@+id/star"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                app:srcCompat="@drawable/star"
+                />
+            <TextView
+                android:id="@+id/number_of_stars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingRight="1dp"
+                android:text="10sp"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                tools:text="NEMBER OF STARS"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

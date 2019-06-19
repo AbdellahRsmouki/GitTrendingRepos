@@ -26,7 +26,7 @@ public class HomePageActivity extends AppCompatActivity {
 
     }
     private void setupTablayout() {
-        tabLayout = findViewById(R.id.tablyout);
+        tabLayout = findViewById(R.id.tablayout);
         viewPager = findViewById(R.id.viewpager);
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
@@ -35,8 +35,8 @@ public class HomePageActivity extends AppCompatActivity {
 
         adapter = new TabAdapter(getSupportFragmentManager(), tabLayout.getTabCount());
         viewPager.setAdapter(adapter);
-        viewPager.setOffscreenPageLimit(3);
-        viewPager.setCurrentItem(1);
+        viewPager.setOffscreenPageLimit(2);
+        viewPager.setCurrentItem(0);
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
 

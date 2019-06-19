@@ -1,11 +1,7 @@
 package rsmouki.example.com.Fragments;
 
-import android.content.Context;
-import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.net.Uri;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
@@ -17,15 +13,12 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 
-import java.io.IOException;
 import java.net.SocketTimeoutException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -35,7 +28,6 @@ import rsmouki.example.com.githubrepos.R;
 import rsmouki.example.com.utils.ApiService;
 import rsmouki.example.com.utils.JsonPageModel;
 import rsmouki.example.com.utils.RepoDTO;
-import rsmouki.example.com.utils.RepoList;
 import rsmouki.example.com.utils.ServiceGenerator;
 
 public class TrendingReposActivity extends Fragment {
@@ -65,8 +57,21 @@ public class TrendingReposActivity extends Fragment {
         /**
          * you need to add audio files here.
          */
+        Repo r;
+        Bitmap abatar = BitmapFactory.decodeResource(view.getResources(),
+                R.drawable.github_logo);
+        r = new Repo("GithubREPO1","short decriptoin","abdellah",
+                1000, abatar);
+        itemsData.add(r);
+        r = new Repo("GithubREPO2","long decriptoin","rsmouki",
+                1200, abatar);
+        itemsData.add(r);
+        r = new Repo("GithubREPO3","medium decriptoin","hassan",
+                1500, abatar);
+        itemsData.add(r);
 
-        loadData();
+
+        //loadData();
         Log.d(TAG, "DATA__:"+itemsData.toString());
 
         /**
@@ -116,11 +121,11 @@ public class TrendingReposActivity extends Fragment {
                         return;
                     }
                     for(RepoDTO i : onePage){
-                        ImageView ownerAv = null;
-                        ownerAv.setImageBitmap(getImageFromServer(i.getOwner().getAvatar_url()));
-                        if(ownerAv == null){
+                        Bitmap ownerAv = null;
+                        ownerAv = getImageFromServer(i.getOwner().getAvatar_url());
+                        /*if(ownerAv == null){
                             ownerAv.setImageDrawable(ContextCompat.getDrawable(getActivity(),R.drawable.github_logo));
-                        }
+                        }*/
                         Repo r = new Repo(i.getName(),i.getDescription(),i.getOwner().getLogin(),i.getStargazers_count(), ownerAv);
                         //AudioFile j = new AudioFile(i.getId(),i.getaName(),i.getAtype(),i.getAlangue());
                         // Log.d(TAG, "file from server : "+ j.toString());
@@ -157,11 +162,11 @@ public class TrendingReposActivity extends Fragment {
                         return;
                     }
                     for(RepoDTO i : onePage){
-                        ImageView ownerAv = null;
-                        ownerAv.setImageBitmap(getImageFromServer(i.getOwner().getAvatar_url()));
-                        if(ownerAv == null){
+                        Bitmap ownerAv = null;
+                        ownerAv = getImageFromServer(i.getOwner().getAvatar_url()); //setImageBitmap(
+                        /*if(ownerAv == null){
                             ownerAv.setImageDrawable(ContextCompat.getDrawable(getActivity(),R.drawable.github_logo));
-                        }
+                        }*/
                         Repo r = new Repo(i.getName(),i.getDescription(),i.getOwner().getLogin(),i.getStargazers_count(), ownerAv);
                         //AudioFile j = new AudioFile(i.getId(),i.getaName(),i.getAtype(),i.getAlangue());
                         // Log.d(TAG, "file from server : "+ j.toString());

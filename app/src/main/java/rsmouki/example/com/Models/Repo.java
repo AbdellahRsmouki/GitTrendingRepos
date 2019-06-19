@@ -1,6 +1,6 @@
 package rsmouki.example.com.Models;
 
-import android.widget.ImageView;
+import android.graphics.Bitmap;
 
 public class Repo {
 
@@ -8,9 +8,9 @@ public class Repo {
     private String description;
     private String ownerName;
     private int nbrStars;
-    private ImageView ownerImage;
+    private Bitmap ownerImage;
 
-    public Repo(String name, String description, String ownerName, int nbrStars, ImageView ownerImage) {
+    public Repo(String name, String description, String ownerName, int nbrStars, Bitmap ownerImage) {
         this.name = name;
         this.description = description;
         this.ownerName = ownerName;
@@ -22,11 +22,11 @@ public class Repo {
 
     }
 
-    public ImageView getOwnerImage() {
+    public Bitmap getOwnerImage() {
         return ownerImage;
     }
 
-    public void setOwnerImage(ImageView ownerImage) {
+    public void setOwnerImage(Bitmap ownerImage) {
         this.ownerImage = ownerImage;
     }
 

@@ -43,7 +43,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         viewHolder.txtViewTitle.setText(_itemsData.get(position).getName());
         viewHolder.txtViewDesc.setText(_itemsData.get(position).getDescription());
         viewHolder.txtViewOwnerName.setText(_itemsData.get(position).getOwnerName());
-        viewHolder.txtViewNbrStars.setText(_itemsData.get(position).getNbrStars());
+        viewHolder.txtViewNbrStars.setText(Integer.toString((_itemsData.get(position).getNbrStars())));
 
     }
 
