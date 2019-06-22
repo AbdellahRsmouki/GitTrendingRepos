@@ -2,6 +2,10 @@ package rsmouki.example.com.Models;
 
 import android.graphics.Bitmap;
 
+import java.util.List;
+
+import rsmouki.example.com.Fragments.TrendingReposActivity;
+
 public class Repo {
 
     private String name;
@@ -61,4 +65,5 @@ public class Repo {
     public void setNbrStars(int nbrStars) {
         this.nbrStars = nbrStars;
     }
+
 }
